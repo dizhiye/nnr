@@ -1,0 +1,63 @@
+<input type=text name=percent size=46 style="font-family:Arial;
+color:gray; text-align:center;
+border-width:medium; border-style:none;">
+
+<html style="height:100%">
+    <head>
+        <title>跳转页</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script></script>
+        <meta name="keywords" content="跳转中">
+    <meta name="description" content="跳转中！">
+    </head>
+    <body style="text-align:center;font-size:20px;font-weight:600;">
+        
+<form name=loading>
+    
+<td align=center style="width:100%">
+    <img src="http://mftv.me/tiaozhuan/nnr/loading.gif">
+<p><font color=gray>正在打开最新地址，请等待几秒钟</p>
+<input type=text hidden="hidden" name=chart size=46 style="font-family:Arial;
+font-weight:bolder; color:gray;
+background-color:white; padding:0px; border-style:none;">
+<br>
+
+<input type=text name=percent size=46 style="font-family:Arial;
+color:gray; text-align:center;
+border-width:medium; border-style:none;">
+
+</td>
+
+</form>
+
+    </body>
+    
+    <script>
+    var bar=0;
+    var line="";
+    var amount="";
+    count();
+    function count(){
+        bar=bar+2;
+        amount=amount+line;
+        document.loading.chart.value=amount;
+        document.loading.percent.value=bar+"%";
+        if (bar<99) 
+        {
+            setTimeout("count()", 10);
+        }
+        else{
+            window.location="http://nnr1.xyz/";
+        }
+    }
+</script>
+<div style="display:none">
+<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+<script>LA.init({id: "JclJLmYEKQP6WYul",ck: "JclJLmYEKQP6WYul"})</script>
+
+    </div>
+<!---->
+<div style="margin-tottom:0;margin-top: 200%;
+    font-size: small;">
+</div>
+</html>
